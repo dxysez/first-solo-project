@@ -1,0 +1,184 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f0f8ff;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('dubai img green.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.heading {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.heading h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.heading h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Activities Section */
+.activities-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.activities-imgs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.activity {
+    flex: 1;
+    max-width: 30%;
+    box-sizing: border-box;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.activity:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.activity p {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.activity img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.activity img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+/* Guide Section */
+#guide {
+    padding: 60px 20px;
+    background-color: #f0f8ff;
+}
+
+#guide img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+form label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 80%;
+}
